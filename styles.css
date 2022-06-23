@@ -38,10 +38,26 @@ h1 {
     padding: 1em
   }
 
+#infoExpounded{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+
 #image {
-    height: 300px;
+    height: 350px;
     overflow: hidden;
   }
+
+.image {
+    flex-basis: 40%;
+} 
+
+#name-team{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
 
 #driverStats{
     background-color: rgb(136, 133, 133);
