@@ -9,17 +9,22 @@
                 <h1>Pick a driver</h1>
             </div>
             <div id="driver-codes">
+                <span></span>
+                <span></span>
+                <span></span>
                 <!-- driver codes go here -->
             </div>
         </section>
         
         <section id="driverInfo">
             <div id="infoExpounded">
-                <h2 id="name">Driver's Name, <span id="number"> Driver's Number</span></h2>
-                <h3 id="team">Driver's Team</h3>
+                <div id="name-team">
+                    <h2 id="name">Driver's Name, <span id="number"> Driver's Number</span></h2>
+                    <h3 id="team">Driver's Team</h3>
+                </div>    
                 <img
                     id="image"
-                    src=""
+                    src="https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/image.img.1024.medium.jpg/1647334259839.jpg"
                     alt="Driver's Name"
                 />  
             </div>
@@ -30,35 +35,35 @@
                 <tbody>
                     <tr>
                         <th scope="row" id="starts">
-                            <span class="text">Race Starts</span>
+                            <span class="text">Race Starts:</span>
                         </th>
                         <td id="starts-value">how many starts</td>
                     </tr>
                     <tr>
                         <th scope="row" id="pole-positions">
-                            <span class="text">Pole Positions</span>
+                            <span class="text">Pole Positions:</span>
                         </th>
                         <td id="pole-value">how many poles</td>
                     </tr>
                     <tr>
                         <th scope="row" id="podiums">
-                            <span class="text">Podiums</span>
+                            <span class="text">Podiums:</span>
                         </th>
                         <td id="podiums-value">how many podiums</td>
                     </tr>
                     <tr>
                         <th scope="row" id="wins">
-                            <span class="text">Wins</span>
+                            <span class="text">Wins:</span>
                         </th>
                         <td id="wins-value">how many wins</td>
                     </tr>
                     <tr>
-                        <th scope="row" id="championships">World Championships</th>
+                        <th scope="row" id="championships">World Championships:</th>
                         <td id="championships-value">how many championships</td>
                     </tr>
                     <tr>
                         <th scope="row" id="rating">
-                            <span class="text">Driver Rating</span>
+                            <span class="text">Driver Rating:</span>
                         </th>
                         <td id="rating-value">how much rating</td>
                     </tr>
@@ -66,8 +71,7 @@
             </table>
             <h4>Comment: <span id="comment-given">Fan's Comment</span></h4>
         </section>
-
-        <section>
+        <section id="forms">
            <form id="rating-form">
                 <input type="text" placeholder="Rate Driver" id="rate" name="rates" />
                 <input type="submit" value="Rate"/>

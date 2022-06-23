@@ -1,0 +1,60 @@
+html {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#selection{
+    background-color: blueviolet;
+}
+
+h1 {
+    text-align: left;
+    font-size: small;
+    color: black;
+    padding: 1em;
+}
+
+#driver-codes span {
+    padding: 1%;
+    height: 2.5%;
+    width: auto;
+    display: inline-block;
+    justify-content: space-around;
+    font-size: 3vh;
+    align-items: center;
+    border-radius: 2em;
+    border: 1px solid white;
+    color: black;
+  }
+
+#driverInfo {
+    text-align: center;
+    background-color: rgb(136, 133, 133);
+    color: black;
+    padding: 1em
+  }
+
+#image {
+    height: 300px;
+    overflow: hidden;
+  }
+
+#driverStats{
+    background-color: rgb(136, 133, 133);
+    text-align: center;
+    padding: 1em;
+}  
+
+#statList{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#forms{
+    background-color: rgb(136, 133, 133);
+    text-align: center;
+}
