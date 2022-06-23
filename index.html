@@ -1,1 +1,83 @@
-<p>Hello World</p>
+<html>
+    <head>
+        <title>The 2022 Formula 1 Drivers</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <section id="selection">
+            <div class="logo">
+                <h1>Pick a driver</h1>
+            </div>
+            <div id="driver-codes">
+                <!-- driver codes go here -->
+            </div>
+        </section>
+        
+        <section id="driverInfo">
+            <div id="infoExpounded">
+                <h2 id="name">Driver's Name, <span id="number"> Driver's Number</span></h2>
+                <h3 id="team">Driver's Team</h3>
+                <img
+                    id="image"
+                    src=""
+                    alt="Driver's Name"
+                />  
+            </div>
+        </section>
+
+        <section id="driverStats">
+            <table id="statList">
+                <tbody>
+                    <tr>
+                        <th scope="row" id="starts">
+                            <span class="text">Race Starts</span>
+                        </th>
+                        <td id="starts-value">how many starts</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="pole-positions">
+                            <span class="text">Pole Positions</span>
+                        </th>
+                        <td id="pole-value">how many poles</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="podiums">
+                            <span class="text">Podiums</span>
+                        </th>
+                        <td id="podiums-value">how many podiums</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="wins">
+                            <span class="text">Wins</span>
+                        </th>
+                        <td id="wins-value">how many wins</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="championships">World Championships</th>
+                        <td id="championships-value">how many championships</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="rating">
+                            <span class="text">Driver Rating</span>
+                        </th>
+                        <td id="rating-value">how much rating</td>
+                    </tr>
+                </tbody>        
+            </table>
+            <h4>Comment: <span id="comment-given">Fan's Comment</span></h4>
+        </section>
+
+        <section>
+           <form id="rating-form">
+                <input type="text" placeholder="Rate Driver" id="rate" name="rates" />
+                <input type="submit" value="Rate"/>
+            </form>
+           <form id="comment-form">
+                <input type="text" placeholder="Comment" id="comment" name="comments" />
+                <input type="submit" value="Give Comment"/>
+           </form>
+           <button id="comment-delete">Delete Comment</button>
+        </section>
+        <script src="src/index.js"></script>
+    </body>
+</html>
