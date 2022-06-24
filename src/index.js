@@ -67,5 +67,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Forms
     //Rating Form
-    
+    let p = document.querySelector('#rating-value')
+    p.textContent = 0
+
+    let ratingForm = document.querySelector('form#rating-form') 
+    ratingForm.addEventListener('submit', (e) => {
+        e.preventDefault()
+        let rating = ratingForm.elements['ratings']
+        submitDriverRating(rating)
+        ratingForm.reset()
+    })
+
+    let deleteRating = document.querySelector('#rating-delete')
+    deleteRating.addEventListener('click', (p) => {
+        p = document.querySelector('')
+        p.textContent=0
+    })
+
+    let submitDriverRating = function (rating) {
+        p = document.querySelector('#rating-value')
+        p.textContent= rating
+    }
+
 })
