@@ -16,8 +16,12 @@ This requires creating a `span` tag with the driver's code and add it to the `di
 
 2. Click on any of the span tags which will make a GET request to the API and display the data listed in `section#driverInfo` and `section#driverStats`.
 
-3. Rate a driver out of 10 and this rating will be displayed in `section#driverStats`. Meaning that you have created new information in the API.
+3. Rate a driver out of 10 and this rating will be displayed in `section#driverStats`. Meaning that you have created new information in the API using POST.
 
-4. 
+4. Comment about the driver's career performance and this comment be displayed in `section#driverStats`. The User should also be able to delete their comment.
+
+5. Remove the rating given earlier and delete it from the API using DELETE.
+
+6. Update the number of race starts a driver has after a grand prix weekend using PATCH/PUT
 
 
