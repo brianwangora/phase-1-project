@@ -12,7 +12,8 @@
            "poles": 103,
            "podiums": 184,
            "wins": 103,
-           "championships": 7
+           "championships": 7,
+           "rating": ""
         },
         {
             "id": 2,
@@ -26,7 +27,8 @@
             "poles": 0,
             "podiums": 4,
             "wins": 0,
-            "championships": 0
+            "championships": 0,
+            "rating": ""
          },
          {
             "id": 3,
@@ -40,7 +42,8 @@
             "poles": 15,
             "podiums": 67,
             "wins": 26,
-            "championships": 1
+            "championships": 1,
+            "rating": ""
          },
          {
             "id": 4,
@@ -54,7 +57,8 @@
             "poles": 1,
             "podiums": 20,
             "wins": 3,
-            "championships": 0
+            "championships": 0,
+            "rating": ""
          },
          {
             "id": 5,
@@ -68,7 +72,8 @@
             "poles": 15,
             "podiums": 17,
             "wins": 4,
-            "championships": 0
+            "championships": 0,
+            "rating": ""
          },
          {
             "id": 6,
@@ -82,7 +87,8 @@
             "poles": 0,
             "podiums": 11,
             "wins": 0,
-            "championships": 0
+            "championships": 0,
+            "rating": ""
          },
          {
             "id": 7,
@@ -96,7 +102,8 @@
             "poles": 1,
             "podiums": 6,
             "wins": 0,
-            "championships": 0
+            "championships": 0,
+            "rating": ""
          },
          {
             "id": 8,
@@ -110,7 +117,8 @@
             "poles": 3,
             "podiums": 32,
             "wins": 8,
-            "championships": 0
+            "championships": 0,
+            "rating": ""
          },
          {
             "id": 9,
@@ -124,7 +132,8 @@
             "poles": 0,
             "podiums": 3,
             "wins": 1,
-            "championships": 0
+            "championships": 0,
+            "rating": ""
          },
          {
             "id": 10,
@@ -138,7 +147,8 @@
             "poles": 0,
             "podiums": 0,
             "wins": 0,
-            "championships": 0
+            "championships": 0,
+            "rating": ""
          },
          {
             "id": 11,
@@ -152,7 +162,8 @@
             "poles": 22,
             "podiums": 98,
             "wins": 32,
-            "championships": 2
+            "championships": 2,
+            "rating": ""
          },
          {
             "id": 12,
@@ -166,7 +177,8 @@
             "poles": 0,
             "podiums": 2,
             "wins": 1,
-            "championships": 0
+            "championships": 0,
+            "rating": ""
          },
          {
             "id": 13,
@@ -180,7 +192,8 @@
             "poles": 20,
             "podiums": 67,
             "wins": 10,
-            "championships": 0
+            "championships": 0,
+            "rating": ""
          },
          {
             "id": 14,
@@ -194,7 +207,8 @@
             "poles": 0,
             "podiums": 0,
             "wins": 0,
-            "championships": 0
+            "championships": 0,
+            "rating": ""
          },
          {
             "id": 15,
@@ -208,7 +222,8 @@
             "poles": 57,
             "podiums": 122,
             "wins": 53,
-            "championships": 4
+            "championships": 4,
+            "rating": ""
          },
          {
             "id": 16,
@@ -222,7 +237,8 @@
             "poles": 1,
             "podiums": 3,
             "wins": 0,
-            "championships": 0
+            "championships": 0,
+            "rating": ""
          },
          {
             "id": 17,
@@ -236,7 +252,8 @@
             "poles": 0,
             "podiums": 2,
             "wins": 0,
-            "championships": 0
+            "championships": 0,
+            "rating": ""
          },
          {
             "id": 18,
@@ -250,7 +267,8 @@
             "poles": 0,
             "podiums": 0,
             "wins": 0,
-            "championships": 0
+            "championships": 0,
+            "rating": ""
          },
          {
             "id": 19,
@@ -264,7 +282,8 @@
             "poles": 0,
             "podiums": 1,
             "wins": 0,
-            "championships": 0
+            "championships": 0,
+            "rating": ""
          },
          {
             "id": 20,
@@ -278,7 +297,8 @@
             "poles": 0,
             "podiums": 0,
             "wins": 0,
-            "championships": 0
+            "championships": 0,
+            "rating": ""
          }
     ]
 }
