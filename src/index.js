@@ -1,40 +1,49 @@
-//Naming Variables
+//Fetching Data
+function fetchDrivers () {
+    fetch('https://brianwangora.github.io/phase-1-project/db.json')
+    .then(res => res.json)
+    .then(data => console.log(data))
+        // .forEach(driver => (
+        // driverCode(driver), 
+        // driverName(driver),
+        // driverNumber(driver),
+        // driverTeam(driver),
+        // driverImage(driver)
+        //  )));
+}
+fetchDrivers()
 
-
-
-// //Fetching Data
-// function allDriverInfo (driver) {
-//     fetch('https://brianwangora.github.io/phase-1-project/db.json')
-//     .then(response => response.json())
-//     .then(driverData => driverData.forEach(driver => (driverCodes)))
+// //Display Driver Codes
+// function driverCode(driver) {
+//     let codeTag = document.createElement('div')
+//     codeTag.id = 'driverCodes'
+//     codeTag.innerHTML=
+//         `<p>
+//             <span>${driver.code}</span>
+//          <p>`
+//     document.querySelector('#driver-codes').appendChild(codeTag)
+//     codeTag.addEventListener('click', () => {
+//         changeDriverName(driver), changeDriverNumber(driver), changeDriverTeam(driver), changeDriverImage(driver)
+//     })              
 // }
 
-//document.addEventListener('DOMContentLoaded', () => {
+// //Display Driver Name
+// function changeDriverName(driver) {
+//     let driverName = document.querySelector('#name')
+//     driverName.textContent=`${driver.name}`
+// }
 
-    //Fetching Data
-    function allDriverInfo () {
-        fetch('https://brianwangora.github.io/phase-1-project/db.json')
-        .then(response => response.json())
-        .then(drivers =>
-            driverCodes(drivers))
-        }
-    allDriverInfo()    
-     
-    //Add received Driver Codes to DOM
-    function driverCodes (drivers) {
-        for (let elements of drivers){
-            let codeList = document.getElementById('driver-codes')    
-            let codeTag = document.createElement('span')
-            codeTag.id= 'driverCodes'
-            codeTag.textContent=elements.code
-            codeList.append(codeTag)
-            //codeTag.addEventListener('click', () => {
+// //Display Driver Number
+// function changeDriverNumber(driver) {
 
-            //})             
-        }
-    }
+// }
 
-       
+// //Display Driver Team
+// function changeDriverTeam(driver) {
 
+// }
 
-//}
+// //Display Driver Image
+// function changeDriverImage(driver) {
+
+// }
