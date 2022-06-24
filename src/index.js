@@ -1,48 +1,67 @@
 //Fetching Data
-function fetchDrivers () {
-    fetch('https://brianwangora.github.io/phase-1-project/db.json')
-    .then(res => res.json)
-    .then(data => data.forEach(driver => (
-        driverCode(driver), 
-        driverName(driver),
-        driverNumber(driver),
-        driverTeam(driver),
-        driverImage(driver)
-         )));
+async function fetchDrivers () {
+    let url =('https://brianwangora.github.io/phase-1-project/db.json')
+    try {
+        let response = await fetch(url);
+        return await response.json();
+    } catch (error) {
+        console.log(error)
+    }
 }
 fetchDrivers()
 
 //Display Driver Codes
-function driverCode(driver) {
-    let codeTag = document.createElement('div')
-    codeTag.id = 'driverCodes'
-    codeTag.innerHTML=
-        `<p>
-            <span>${driver.code}</span>
-         <p>`
-    document.querySelector('#driver-codes').appendChild(codeTag)
-    codeTag.addEventListener('click', () => {
-        changeDriverName(driver), changeDriverNumber(driver), changeDriverTeam(driver), changeDriverImage(driver)
-    })              
+async function displayDriverCode() {
+    let drivers = await fetchDrivers()
+    let html = ''
+    drivers.forEach(driver => {
+        let codeTag = `<div id="driverCodes">
+                            <p>
+                                <span>${driver.code}</span>
+                            </p>
+                        </div>`
+         html += codeTag               
+    })
+    let driverCode = document.querySelector('#driver-codes')
+    driverCode.innerHTML = html
+    
+    // codeTag.addEventListener('click', () => {
+    //     changeDriverName(driver), changeDriverNumber(driver), changeDriverTeam(driver), changeDriverImage(driver)
+    // })              
 }
+displayDriverCode()
 
-//Display Driver Name
-function changeDriverName(driver) {
-    let driverName = document.querySelector('#name')
-    driverName.textContent=`${driver.name}`
-}
+// //Display Driver Name
+// function changeDriverName(driver) {
+//     let driverName = document.querySelector('#name')
+//     driverName.textContent=`${driver.name}`
+// }
 
-//Display Driver Number
-function changeDriverNumber(driver) {
+// //Display Driver Number
+// function changeDriverNumber(driver) {
 
-}
+// }
 
-//Display Driver Team
-function changeDriverTeam(driver) {
+// //Display Driver Team
+// function changeDriverTeam(driver) {
 
-}
+// }
 
-//Display Driver Image
-function changeDriverImage(driver) {
+// //Display Driver Image
+// function changeDriverImage(driver) {
 
-}
+// }
+
+
+// let drivers = await fetchDrivers()
+//     let html = ''
+//     drivers.forEach(driver => {
+//         let codeTag = `<div id="driverCodes">
+//                             <p>
+//                                 <span>${driver.code}</span>
+//                             </p>
+//                         </div>`
+//          html += codeTag               
+//     })
+//     let driverCode = document.querySelector('#driver-codes')
+//     driverCode.innerHTML = html

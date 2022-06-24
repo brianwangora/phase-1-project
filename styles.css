@@ -18,18 +18,22 @@ h1 {
     padding: 1em;
 }
 
+#driver-codes{
+    text-align: center;
+}
+#driver-codes div {
+  display: inline-block;
+  padding: 0.75%;
+  vertical-align: auto;
+  align-items: center;
+  justify-content: center;
+  
+} 
+
 #driver-codes span {
-    padding: 1%;
-    height: 2.5%;
-    width: auto;
-    display: inline-block;
-    justify-content: space-around;
     font-size: 3vh;
-    align-items: center;
-    border-radius: 2em;
-    border: 1px solid white;
-    color: black;
-  }
+    font-weight: 550;
+  } 
 
 #driverInfo {
     text-align: center;
