@@ -65,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         championships.textContent=`${driver.championships}`
     }
 
-//Forms
-//Rating Form
+    //Forms
+    //Rating Form
+    
 })
