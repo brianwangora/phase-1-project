@@ -11,6 +11,13 @@ The API used to obtain the divers' information is :
 
 As a user I can:
 
-1. 
+1. See all drivers codes (for example; HAM, BOT, VER) in a `div` with the id of `"driver-codes"`. 
+This requires creating a `span` tag with the driver's code and add it to the `div#driver-codes`.
+
+2. Click on any of the span tags which will make a GET request to the API and display the data listed in `section#driverInfo` and `section#driverStats`.
+
+3. Rate a driver out of 10 and this rating will be displayed in `section#driverStats`. Meaning that you have created new information in the API.
+
+4. 
 
 
