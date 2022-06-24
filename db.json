@@ -1,5 +1,4 @@
-{
-    "drivers": [
+[
         {
            "id": 1,
            "name": "Lewis Hamilton",
@@ -301,4 +300,3 @@
             "rating": ""
          }
 ]
-}
