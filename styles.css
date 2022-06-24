@@ -13,7 +13,7 @@ html, body {
 
 h1 {
     text-align: left;
-    font-size: small;
+    font-size: smaller;
     color: black;
     padding: 1em;
 }
@@ -21,15 +21,14 @@ h1 {
 #driver-codes{
     text-align: center;
 }
-#driver-codes div {
-  display: inline-block;
-  padding: 0.75%;
-  vertical-align: auto;
-  align-items: center;
-  justify-content: center;
-  
-} 
 
+#driver-codes div {
+    display: inline-block;
+    padding: 0.75%;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center
+}
 #driver-codes span {
     font-size: 3vh;
     font-weight: 550;
