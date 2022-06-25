@@ -9,6 +9,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     fetchData()
 
+    let postDriverInfo= function (driverEntry) {
+        
+        fetch('https://brianwangora.github.io/phase-1-project/db.json', {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify(driverEntry)
+    })
+    .then(res => res.json())
+    .then(entry => console.log(entry))
+}
+
+
     //Display Driver Codes on DOM
     let displayDriverCode = function (driver) {
         let codeTag = document.createElement('div')
@@ -59,7 +73,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     //Forms
-    
+    document.querySelector('#driver-form').addEventListener('submit', handleEntry)
+
+    function handleEntry (e) {
+        e.preventDefault()
+        let driverEntry = {
+            name: e.target.driver_name.value,
+            number: e.target.driver_number.value,
+            code: e.target.driver_code.value,
+            team: e.target.driver_team.value,
+            nationality: e.target.driver_nationality.value,
+            image: e.target.driver_image.value,
+            starts: e.target.driver_starts.value,
+            poles: e.target.driver_poles.value,
+            podiums: e.target.driver_podiums.value,
+            wins: e.target.driver_wins.value,
+            championships: e.target.driver_championships.value
+        }
+        displayDriverCode(driverEntry)
+        displayAllInformation(driverEntry)
+        postDriverInfo(driverEntry)
+    }
 
     
 
