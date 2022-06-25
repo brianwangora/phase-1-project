@@ -61,34 +61,28 @@
                         <th scope="row" id="championships">World Championships:</th>
                         <td id="championships-value">how many championships</td>
                     </tr>
-                    <tr>
-                        <th scope="row" id="rating">
-                            <span class="text">Driver Rating:</span>
-                        </th>
-                        <td id="rating-value">Rating?</td>
-                    </tr>
                 </tbody>        
             </table>
-            <h4>Comment: 
-                <div id="comment-given">
-
-                </div>
-            </h4>
         </section>
 
         <section id="forms">
-           <form id="rating-form">
-                <input type="text" placeholder="Rate Driver" id="newRating" name="rates" />
-                <input type="submit" value="Rate"/>
+           <h4>Add a Driver</h4> 
+           <form id="driver-form" method="post" action="">
+                <input type="text" placeholder="Driver Name" id="driver-name" name="driverName"/>
+                <input type="text" placeholder="Driver Number" id="driver-number" name="driverNumber"/>
+                <input type="text" placeholder="Driver Code" id="driver-code" name="driverCode"/>
+                <input type="text" placeholder="Driver Team" id="driver-team" name="driverTeam"/>
+                <input type="text" placeholder="Driver Nationality" id="driver-nationality" name="driverNationality"/>
+                <input type="text" placeholder="Driver image" id="driver-image" name="driverImage"/>
+                <input type="text" placeholder="Driver Starts" id="driver-starts" name="driverStarts"/>
+                <input type="text" placeholder="Driver Poles" id="driver-poles" name="driverPoles"/>
+                <input type="text" placeholder="Driver Podiums" id="driver-podiums" name="driverPodiums"/>
+                <input type="text" placeholder="Driver Wins" id="driver-wins" name="driverWins"/>
+                <input type="text" placeholder="Driver Championships" id="driver-championships" name="driverChampionships"/>
+                <input type="submit" value="Add Driver"/>
             </form>
-           <form id="comment-form">
-                <input type="text" placeholder="Comment" id="newComment" name="comments" />
-                <input type="submit" value="Give Comment"/>
-           </form>
-           <button id="comment-delete">Delete Comment</button>
-           <button id="rating-delete">Delete Rating</button>
+           <button id="entry-delete">Delete Driver Entry</button>
         </section>
-
         <script src="src/index.js"></script>
     </body>
 </html>

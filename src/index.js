@@ -55,36 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let championships = document.querySelector('#championships-value')
     championships.textContent=`${driver.championships}`
     
-    let driverRating =  document.querySelector('#rating-value')
-    driverRating.textContent=`${driver.rating}`
     }
 
 
     //Forms
-    //Rating Form
-    // let ratingForm = document.querySelector('#rating-form')
-    //     ratingForm.addEventListener('submit', handleRating)
-
-    // function handleRating(e) {
-    //     e.preventDefault()
-    //     let driverRating  = {
-    //         rating: e.target.
-    //     }
-    // }    
-
-    //Comment Form
-    // let commentForm = document.querySelector('#comment-form')
-    // commentForm.addEventListener('submit', (e) => {
-    //     e.preventDefault()
-    //     handleComment(e.target.newComment.value)
-    // })
-
-    // function handleComment(comment){
-    //     let p = document.createElement('p')
-    //     p.textContent = comment
-    //     document.querySelector('#comment-given').appendChild(p)
-        
-    // }
+    
 
     
 

@@ -41,6 +41,13 @@ h1 {
     padding: 1em
   }
 
+#forms {
+    text-align: center;
+    background-color: rgb(136, 133, 133);
+    color: black;
+    padding: 1em
+}  
+
 #infoExpounded{
     display: flex;
     align-items: center;
@@ -66,6 +73,7 @@ h1 {
     background-color: rgb(136, 133, 133);
     text-align: center;
     padding: 1em;
+    font-size: larger;
 }  
 
 #statList{
@@ -76,4 +84,9 @@ h1 {
 #forms{
     background-color: rgb(136, 133, 133);
     text-align: center;
+}
+
+h4 {
+    font-size: large;
+    text-align: left;
 }
