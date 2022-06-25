@@ -19,74 +19,73 @@ document.addEventListener('DOMContentLoaded', () => {
             </p>`
         document.querySelector('#driver-codes').appendChild(codeTag)
         codeTag.addEventListener('click', () => {(
-            displayDriverName(driver), displayDriverTeam(driver), displayDriverImage(driver),
-            showRaceStarts(driver), showPolePositions (driver), showPodiums (driver), showWins(driver), showWorldChampionships(driver)
+            displayAllInformation(driver)
         )})    
     }
 
+    //Displaying all Information
+    let displayAllInformation = function (driver) {
+
     //Display Driver Name and Number on DOM
-    let displayDriverName = function (driver) {
-        let driverName = document.querySelector('#name')
-        driverName.textContent=`${driver.name}, ${driver.number}`
-    }
+    let driverName = document.querySelector('#name')
+    driverName.textContent=`${driver.name}, ${driver.number}`
 
     //Display Driver Team
-    let displayDriverTeam = function(driver) {
-        let driverTeam = document.querySelector('#team')
-        driverTeam.textContent=`${driver.team}`
-    }
+    let driverTeam = document.querySelector('#team')
+    driverTeam.textContent=`${driver.team}`
 
     //Display Driver Image
-    let displayDriverImage = function (driver) {
-        let driverImage = document.querySelector('#image')
-        driverImage.src = `${driver.image}`
-        driverImage.alt= `${driver.name}`
+    let driverImage = document.querySelector('#image')
+    driverImage.src = `${driver.image}`
+    driverImage.alt= `${driver.name}`
+
+    //STATS Table
+    let raceStarts = document.querySelector('#starts-value')
+    raceStarts.textContent= `${driver.starts}`
+
+    let polePositions = document.querySelector('#pole-value')
+    polePositions.textContent= `${driver.poles}`
+    
+    let podiums = document.querySelector('#podiums-value')
+    podiums.textContent=`${driver.podiums}`
+    
+    let wins = document.querySelector('#wins-value')
+    wins.textContent=`${driver.wins}`
+    
+    let championships = document.querySelector('#championships-value')
+    championships.textContent=`${driver.championships}`
+    
+    let driverRating =  document.querySelector('#rating-value')
+    driverRating.textContent=`${driver.rating}`
     }
 
-//STATS Table
-    let showRaceStarts = function (driver) {
-        let raceStarts = document.querySelector('#starts-value')
-        raceStarts.textContent= `${driver.starts}`
-    }
-    let showPolePositions = function (driver) {
-        let polePositions = document.querySelector('#pole-value')
-        polePositions.textContent= `${driver.poles}`
-    }
-    let showPodiums = function (driver) {
-        let podiums = document.querySelector('#podiums-value')
-        podiums.textContent=`${driver.podiums}`
-    }
-    let showWins = function (driver) {
-        let wins = document.querySelector('#wins-value')
-        wins.textContent=`${driver.wins}`
-    }
-    let showWorldChampionships = function (driver) {
-        let championships = document.querySelector('#championships-value')
-        championships.textContent=`${driver.championships}`
-    }
 
     //Forms
     //Rating Form
-    let p = document.querySelector('#rating-value')
-    p.textContent = 0
+    // let ratingForm = document.querySelector('#rating-form')
+    //     ratingForm.addEventListener('submit', handleRating)
 
-    let ratingForm = document.querySelector('form#rating-form') 
-    ratingForm.addEventListener('submit', (e) => {
-        e.preventDefault()
-        let rating = ratingForm.elements['ratings']
-        submitDriverRating(rating)
-        ratingForm.reset()
-    })
+    // function handleRating(e) {
+    //     e.preventDefault()
+    //     let driverRating  = {
+    //         rating: e.target.
+    //     }
+    // }    
 
-    let deleteRating = document.querySelector('#rating-delete')
-    deleteRating.addEventListener('click', (p) => {
-        p = document.querySelector('')
-        p.textContent=0
-    })
+    //Comment Form
+    // let commentForm = document.querySelector('#comment-form')
+    // commentForm.addEventListener('submit', (e) => {
+    //     e.preventDefault()
+    //     handleComment(e.target.newComment.value)
+    // })
 
-    let submitDriverRating = function (rating) {
-        p = document.querySelector('#rating-value')
-        p.textContent= rating
-    }
+    // function handleComment(comment){
+    //     let p = document.createElement('p')
+    //     p.textContent = comment
+    //     document.querySelector('#comment-given').appendChild(p)
+        
+    // }
+
+    
 
 })

@@ -65,20 +65,24 @@
                         <th scope="row" id="rating">
                             <span class="text">Driver Rating:</span>
                         </th>
-                        <td id="rating-value">how much rating</td>
+                        <td id="rating-value">Rating?</td>
                     </tr>
                 </tbody>        
             </table>
-            <h4>Comment: <span id="comment-given">Fan's Comment</span></h4>
+            <h4>Comment: 
+                <div id="comment-given">
+
+                </div>
+            </h4>
         </section>
 
         <section id="forms">
            <form id="rating-form">
-                <input type="text" placeholder="Rate Driver" id="rate" name="rates" />
+                <input type="text" placeholder="Rate Driver" id="newRating" name="rates" />
                 <input type="submit" value="Rate"/>
             </form>
            <form id="comment-form">
-                <input type="text" placeholder="Comment" id="comment" name="comments" />
+                <input type="text" placeholder="Comment" id="newComment" name="comments" />
                 <input type="submit" value="Give Comment"/>
            </form>
            <button id="comment-delete">Delete Comment</button>
