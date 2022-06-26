@@ -9,9 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     fetchData()
 
+    //POST Driver Entry
+
     let postDriverInfo= function (driverEntry) {
         
-        fetch('https://brianwangora.github.io/phase-1-project/db.json', {
+        fetch(`https://brianwangora.github.io/phase-1-project/db.json/${driver.id}`, {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
@@ -20,8 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .then(res => res.json())
     .then(entry => console.log(entry))
-}
-
+    }
 
     //Display Driver Codes on DOM
     let displayDriverCode = function (driver) {
@@ -34,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('#driver-codes').appendChild(codeTag)
         codeTag.addEventListener('click', () => {(
             displayAllInformation(driver)
-        )})    
+        )})
     }
 
     //Displaying all Information
@@ -72,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    //Forms
+    //ADD Driver Form
     document.querySelector('#driver-form').addEventListener('submit', handleEntry)
 
     function handleEntry (e) {
@@ -94,6 +95,9 @@ document.addEventListener('DOMContentLoaded', () => {
         displayAllInformation(driverEntry)
         postDriverInfo(driverEntry)
     }
+
+    
+
 
     
 
