@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let postDriverInfo= function (driverEntry) {
         
-        fetch(`https://brianwangora.github.io/phase-1-project/db.json/${driverEntry.id}`, {
+        fetch(`https://brianwangora.github.io/phase-1-project/db.json`, {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
