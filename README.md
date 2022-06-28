@@ -17,3 +17,5 @@ This requires creating a `span` tag with the driver's code and add it to the `di
 2. Click on any of the span tags which will make a GET request to the API and display the data listed in `section#driverInfo` and `section#driverStats`.
 
 3. Use a form to add a driver to the API using POST and it being accessible on the DOM.
+
+### You can view the project on: https://brianwangora.github.io/phase-1-project/ 
